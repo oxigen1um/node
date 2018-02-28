@@ -1,6 +1,8 @@
 const http = require('http');
 const url = require('url');
 
+var log = require('./log')(module);
+
 var server = new http.Server(function(req, res) {
   console.log(req.method, req.url);
 
